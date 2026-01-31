@@ -1126,12 +1126,12 @@ def format_ips(url):
                     #write_log() complaind and spit out a bunch 
                     #of exceptions about the format specifiers
                     msg = format(err)
-                    msg_to_string =  "[!] Received URL Error trying to download feed from " + urls," Reason: " + msg
+                    msg_to_string = "[!] Received URL Error trying to download feed from " + urls + ", Reason: " + msg
                     final_msg = str(msg_to_string)
                     write_log(final_msg)
                 if is_posix():
                     write_log(
-                        "Received URL Error trying to download feed from '%s', Reason: %s" (urls, format(err)),1)
+                        "Received URL Error trying to download feed from '%s', Reason: %s" % (urls, format(err)), 1)
 
     try:
         if is_windows():
